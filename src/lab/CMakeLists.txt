@@ -18,6 +18,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
+find_package(xacro)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -37,6 +38,9 @@ install(
   DIRECTORY
   launch 
   urdf 
+  rviz 
+  config 
+  world 
   DESTINATION 
   share/${PROJECT_NAME}/
 )
